@@ -11,7 +11,7 @@
 //P: integer
 //R: day or string
 //E: 1 returns "Sunday" ; 2 returns "Monday" ; 3 returns "Tuesday"
-//P : Use the switch loop to connect each number to the day or create an object
+//P : Use the switch loop to connect each number to the day or create an object and return
 
 function whatday(num) {
     switch (num) {
