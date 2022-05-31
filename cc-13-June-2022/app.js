@@ -19,3 +19,13 @@ var max = function (list) {
 
     return (Math.max.apply(null, list));
 }
+
+//Different solution 31may2022
+
+var min = function (list) {
+    return (Math.min(...list));
+}
+
+var max = function (list) {
+    return (Math.max(...list));
+}
