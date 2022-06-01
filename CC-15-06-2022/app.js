@@ -6,3 +6,10 @@ function booleanToString(b) {
     //Convert to string
     return b.toString()
 }
+
+//Second solution, same different
+
+function booleanToString(b) {
+    b = b.toString()
+    return b
+}
