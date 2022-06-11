@@ -11,4 +11,10 @@ function sayHello(name, city, state) {
     return (`Hello, ${name}! Welcome to ${city}, ${state}!`)
 
 }
+//Another solution added for this kata
+function sayHello(name, city, state) {
+
+    return (`Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`)
+
+}
 
