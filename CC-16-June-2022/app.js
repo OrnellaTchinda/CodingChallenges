@@ -7,3 +7,14 @@
 function repeatStr(n, s) {
     return s.repeat(n); //The repeat method return a string with a number of copis of a string without spaces
 }
+
+
+//Try using the for loop I know you don't always like it
+
+function repeatStr(n, s) {
+    let result = ""
+    for (let i = 0; i < n; i++) {
+        result += s
+    }
+    return result
+}
