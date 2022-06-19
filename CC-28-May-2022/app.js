@@ -29,3 +29,29 @@ function mxdiflg(a1, a2) {
     return Math.max((Math.max(...a1length) - Math.min(...a2length)), (Math.max(...a2length) - Math.min(...a1length)));
 
 }
+
+// Different solution:
+function mxdiflg(a1, a2) {
+    if (a1.length * a2.length == 0) {
+        return -1
+    }
+    //Get an array of the lenght of each string in the array
+    let a1Length = a1.map((x) => (x.length))
+    let a2Length = a2.map((y) => (y.length))
+
+    //Get the minimum value of the array of the length of the strings in arrays in parameters
+    let minimumA1 = Math.min(...a1Length)
+    let minimumA2 = Math.min(...a2Length)
+
+    //Get the maximum value of the array of length of strings in arrays in parameters
+    let maximumA1 = Math.max(...a1Length)
+    let maximumA2 = Math.max(...a2Length)
+
+    //Get the difference of the maximum string length in the first and the minimum string length of the second array
+    let diffA1 = Math.abs(maximumA1 - minimumA2)
+    let diffA2 = Math.abs(maximumA2 - minimumA1)
+
+    //MAXIMUM DIFFERENCE between any string length between the first and the second array
+    return (Math.max(diffA1, diffA2))
+
+}
