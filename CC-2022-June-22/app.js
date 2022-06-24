@@ -31,3 +31,11 @@ function sumOfDifferences(arr) {
     //return the sum of the difference
     return (Math.abs(newArr.reduce((a, b) => a + b, 0)))
 }
+
+//Different solution
+
+function sumOfDifferences(arr) {
+    arr.sort((a, b) => b - a)
+        .map((a, i) => a - (arr[i + 1] || 0))
+        .reduce((a, b) => a + b, 0);
+}
