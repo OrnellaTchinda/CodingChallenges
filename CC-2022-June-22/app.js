@@ -39,3 +39,4 @@ function sumOfDifferences(arr) {
         .map((a, i) => a - (arr[i + 1] || 0))
         .reduce((a, b) => a + b, 0);
 }
+//FYI the github setting is Public Profile > Contributions & Activity > Include private contributions on my profile Not under Account
