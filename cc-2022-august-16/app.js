@@ -30,3 +30,9 @@ function positiveSum(arr) {
     }
     return sum
 }
+
+function positiveSum(arr) {
+
+    return arr.filter(x => x > 0).reduce((p, c) => p + c, 0)
+
+}
