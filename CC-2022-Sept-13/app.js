@@ -31,3 +31,11 @@ function stantonMeasure(a) {
 
     return newCounter
 }
+
+//Different solution
+function stantonMeasure(array) {
+    const count = array.filter(num => num === 1).length; //number of 1s in the array
+    const stanton = array.filter(num => num === count).length; //number of number of 1s in the array
+
+    return stanton;
+}
