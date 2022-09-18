@@ -28,3 +28,12 @@ function flyBy(lamps, drone) {
 
     return lampsArr.join('')//join to make a string
 }
+
+//Another solution
+
+function flyBy(lamps, drone) {
+
+    return lamps.split('')
+        .map((el, i, arr) => i < drone.length ? 'o' : el)
+        .join('')
+}
