@@ -37,3 +37,12 @@ function flyBy(lamps, drone) {
         .map((el, i, arr) => i < drone.length ? 'o' : el)
         .join('')
 }
+
+//Another solution
+const flyBy = (lamps, drone) => {
+    for (letter of drone) {
+        if (letter === '=' || letter === 'T')
+            lamps = lamps.replace('x', 'o');
+    }
+    return lamps;
+};
