@@ -2,8 +2,8 @@
 //However, when the integer is divisible by 3, print out “Fizz”; when it’s divisible by 5, print out “Buzz”; when it’s divisible by both 3 and 5, print out “Fizz Buzz”.
 
 // integer
-//Fizz Buzz or Fizz Buzz
-
+//Fizz Buzz or Fizz Buzz all the numbers
+//for loop if else etc.
 
 for (let i = 1; i < num; i++) {
     if (i % 3 === 0 && i % 5 === 0) {

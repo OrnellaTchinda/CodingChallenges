@@ -10,12 +10,4 @@
 function addFive(num) {
     var total = num + 5
     return total
-<<<<<<< HEAD
-=======
-}
-
-function addFive(num) {
-    return num + 5
-    //good job
->>>>>>> ffd94ac (merged and resolved the conflict)
 }
