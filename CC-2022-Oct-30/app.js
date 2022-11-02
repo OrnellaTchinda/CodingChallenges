@@ -17,3 +17,9 @@ function dup(s) {
 
 
 };
+
+function dup(s) {
+    //..
+    return s.map(x => x.split('').filter((w, i, a) => w != a[i - 1]).join(''))
+
+};
