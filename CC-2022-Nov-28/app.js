@@ -18,3 +18,8 @@ function averageLength(arr) {
     return arr.map(x => x[0].repeat(averageArr));
 
 }
+
+function averageLength2(arr2) {
+    const theAverageLength = Math.round((arr2.join('').length) / arr2.length);
+    return arr2.map(x => x[0].repeat(theAverageLength));
+}
