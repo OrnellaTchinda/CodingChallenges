@@ -9,3 +9,12 @@ function reverseStr(str) {
 
     return newStr.join('');
 }
+
+function reverseStr(str) {
+    let newStr = "";
+
+    for (let char of newStr) {
+        newStr = char + newStr;
+    }
+    return newStr;
+}
