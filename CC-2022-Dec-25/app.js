@@ -37,3 +37,18 @@ var singleNonDuplicate = function (nums) {
     }
 
 };
+
+var singleNonDuplicate = function (nums) {
+    //object solution
+
+    let counts = {};
+
+    nums.forEach((el) => counts[el] ? counts[el]++ : counts[el] = 1)
+
+    for (const [count, occ] of Object.entries(counts)) {
+
+        if (occ === 1) {
+            return count
+        }
+    }
+}
