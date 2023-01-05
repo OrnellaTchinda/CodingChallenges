@@ -44,3 +44,23 @@ var twoSum = function (nums, target) {
 
     }
 }
+
+//New slt
+var twoSum = function (nums, target) {
+    const map1 = new Map();
+
+    for (let i = 0; i < nums.length; i++) {
+        map1.set(nums[i], i);
+    }
+
+    for (let j = 0; j < nums.length; j++) {
+
+        const result = target - nums[j]
+
+        if (map1.has(result) && (map1.get(result) !== j)) {
+            return [j, map1.get(result)]
+        }
+
+    }
+
+};
