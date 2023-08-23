@@ -41,3 +41,8 @@ var gcdOfStrings = function (str1, str2) {
     return str1.substring(0, gcd(str1.length, str2.length))
 
 };
+// What About time complexity???? What about it? Hein? What about it? Leave me alone
+
+//Time? O(n) we only compute the GCD of the lenghts of str1 and str2 once which takes O(log n) time
+
+//Space? O(1) We only store a constant number of variables(strings and length) throughout the algorithm 
